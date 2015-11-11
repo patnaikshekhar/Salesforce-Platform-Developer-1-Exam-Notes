@@ -4,7 +4,8 @@
 
  * Used to run apex code at specific times
  * Uses the **Scheduable** interface which requires than the execute function be implemented
- * E.g.
+ * Example:
+
  ```java
  global class MySchedulableClass implements Schedulable {
  	global void execute(SchedulableContext ctx) {
@@ -14,6 +15,7 @@
     }
  }
  ```
+
  * Use **System.schedule** to schedule a job. Format
  ```java
  // For Midnight on march 15
@@ -36,7 +38,8 @@
 * Each new batch leads to a new set of Governor limits
 * Each batch is a descrete transaction
 * A batch class has to implement the **Database.Batchable<sObject>** interface
-* e.g.
+* Example:
+
 ```java
 global class CleanUpRecords implements Database.Batchable<sObject> {
 	
