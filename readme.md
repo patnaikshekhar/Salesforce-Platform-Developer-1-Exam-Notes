@@ -6,3 +6,4 @@ These are a bunch of notes for the exam
 2. [Triggers](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/triggers.md)
 3. [Testing](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/testing.md)
 4. [Async Apex](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/async.md)
+5. [REST](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/rest.md)
