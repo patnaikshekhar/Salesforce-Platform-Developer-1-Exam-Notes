@@ -8,4 +8,3 @@ These are a bunch of notes that I made before appearing for the exam. The purpos
 4. [Async Apex](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/async.md)
 5. [REST](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/rest.md)
 6. [Visualforce Basics](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/vf_basics.md)
-7. 
