@@ -63,4 +63,13 @@
 	* You want to schedule regular data loads, such as nightly imports.
 	* You want to export your data for backup purposes.
 
-	
+* Process of Developing Applications in a Release Train
+	* Plan your release around Salesforce upgrades.
+	* Schedule your concurrent development projects. This will help you determine if the new functionality can be done now, in the current release, or sometime in the future.
+	* Establish a process for changes to the production organization.
+	* Track changes in all environments. This will ensure that short-term functionality that is delivered to production does not get overwritten
+when you deploy from your development environment.
+	* Integrate changes and deploy to staging or test environments.
+	* Release to production.
+
+* 
