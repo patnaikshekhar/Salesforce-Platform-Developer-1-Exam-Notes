@@ -10,3 +10,4 @@ These are a bunch of notes that I made before appearing for the exam. The purpos
 6. [Visualforce Basics](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/vf_basics.md)
 7. [Development Lifecycle](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/lifecycle.md)
 8. [Large Data Volumes](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/ldv.md)
+9. [Single Sign On](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/sso.md)
