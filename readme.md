@@ -13,4 +13,6 @@ These are a bunch of notes that I made before appearing for the exam. The purpos
 **Optional**
 8. [Large Data Volumes](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/ldv.md)
 9. [Single Sign On](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/sso.md)
-10. [Single Sign On](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/integration.md)
+10. [Integration](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/integration.md)
+11. [Security](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/security.md)
+12. [Siebel to Salesforce](https://github.com/patnaikshekhar/Salesforce-Platform-Developer-1-Exam-Notes/blob/master/siebel.md)
