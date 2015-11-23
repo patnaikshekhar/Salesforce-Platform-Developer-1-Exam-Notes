@@ -54,10 +54,13 @@
 	* Avoid switching on sharing during the load
 	* Disable Computations such as Apex Triggers, Workflows, etc
 	* Group records by ParentId to avoid locking conflicts
+	* Use SF Guid instead of External Id for Parent References
+	* Bulk API has a limit of the number of records you can load in a day. 300 batches and 10,000 records per batch
 
 * Best Practices for Extracting data from the API
 	* getUpdated() and getDeleted() should be used
 	* Where more than 1 million records are returned use the Bulk API
+	* When using the bulk API chunk the queries
 
 * Best Practices for Searching
 	* Avoid Wildcards
