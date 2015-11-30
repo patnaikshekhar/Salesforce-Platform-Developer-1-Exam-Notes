@@ -6,7 +6,7 @@
 2. KPIS - 
 	* What gets measured gets done.
 
-3. Define Capabilitites
+3. Define Capabilities
 	* Such as Lead Management
 	* Priorities of Capabilities
 
@@ -40,14 +40,14 @@
 
 1. Right Data Architecture - End to end architecture
 2. Legacy Data Analysis - Understand History, Identify Data quality issues. Define Archival, Purge strategy
-3. Data Readyness - Standarization, Enrichment, Transformtion. Conduct one time cleanup
+3. Data Readyness - Standarisation, Enrichment, Transformtion. Conduct one time cleanup
 4. Comprehensive Testing and Verfication - Use reports, Test for consitency, usability
 5. Training and Deployment
 
 ## Issues with Migration
-* Address Migration - SF is more usefriendly
+* Address Migration - SF is more user friendly
 * Households and Party Model - Extend via relationships. Use Lightning connect for insights
 * Data should be profiled before moving
 * Remove unnecessary picklist values
-* Profile the data - Which fields are being used. Which picklist values are being used
+* Profile the data - Which fields are being used, which picklist values are being used, etc
 * Use Data Services in the cloud to clean and enrich the data

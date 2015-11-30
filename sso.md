@@ -22,7 +22,6 @@
 # Salesforce Identity
 
 * Use connected apps to connect to external apps
-* 
 
 # Social Sign On
 
