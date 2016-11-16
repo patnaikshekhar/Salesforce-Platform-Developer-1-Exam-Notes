@@ -3,7 +3,7 @@
 ## Scheduable
 
  * Used to run apex code at specific times
- * Uses the **Scheduable** interface which requires than the execute function be implemented
+ * Uses the **Scheduable** interface which requires that the execute function be implemented
  * Example:
 
  ```java
