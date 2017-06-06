@@ -87,6 +87,53 @@ Database.QueryLocator object is **50 million**.
 * To execute a batch job use **Database.executeBatch**
 ```java
 CleanUpRecords c = new CleanUpRecords(query);
-Database.executeBatch(c);
+Id BatchId = Database.executeBatch(c); //The returned Id can be used to Query Status, Errors etc..
+AsyncApexJob a = [SELECT Id, Status, NumberOfErrors, JobItemsProcessed,
+                  TotalJobItems, CreatedBy.Email
+                  FROM AsyncApexJob WHERE Id = :BatchId];
 ```
+
 * Batches can be scheduled using a scheduler class
+
+## Future Methods
+
+Used to run Apex asynchronously in its own thread at a later time when system resources become available.
+* You use the @future annotation to identify methods that run asynchronously
+* Future Methods must be Static
+* Can only return Void Type
+* Can't call one future method from another
+* Can't take Standard or Custom Data Types as arguments (Typiccally, we use 'ID' or 'List<ID>' as arguments for processing records)
+* Typically used for Callouts to external Web services, Non-Immediate Resource intensive operations.
+
+```
+global class utilClass {
+  @future
+  public static void someFutureMethod(List<Id> recordIds) {
+    List<Contact> conts = [Select Id, FirstName, LastName, Email from Contact Where Id IN :recordIds];
+    // process these contact records to do any operation, like sending emails (ofc, they will be sent at a later time not immediately)
+  }
+}
+```
+
+## Queueable Apex
+
+Is Similar to Future Methods but with some extra features.To use Queueable Apex, simply implement the Queueable interface.
+* Your Queueable class can contain member variables of non-primitive data types, such as sObjects or custom Apex types.
+* Returns an Id similar to Batch apex to Monitor the Async Apex Job.
+* Can chain a Queueable Apex from another Queueable Apex. 
+
+```
+public class SomeClass implements Queueable { 
+    public void execute(QueueableContext context) {
+        // Your Code Logic Here
+    }
+}
+```
+
+```
+SomeClass updateJob = new SomeClass(); // Create an instance of your class and pass any arguments if required.
+// enqueue the job for processing
+ID jobID = System.enqueueJob(updateJob);
+SELECT Id, Status, NumberOfErrors FROM AsyncApexJob WHERE Id = :jobID // Monitor it
+
+```
